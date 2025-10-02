@@ -1,17 +1,28 @@
-package PaPlats.Sprint1.ÖvnUppg2;
+package PaPlats.Sprint1.ÖvnUppg2.övnuppg2b;
 
-public class Cykel extends Fordon{
+public class Bil extends Fordon {
 
     private int antalVäxlar;
     private int växelJustNu;
 
-    public Cykel() {}
+    public Bil() {}
 
-    public Cykel(int hastighet, int vikt, int antalVäxlar, int växelJustNu) {
+    public Bil(int hastighet, int vikt, int antalVäxlar, int växelJustNu) {
         super(hastighet, vikt);
         this.antalVäxlar = antalVäxlar;
         this.växelJustNu = växelJustNu;
     }
+
+    @Override
+    public void printMe(){
+        System.out.println("Printme in Bil{" +
+                "hastighet=" + getHastighet() +
+                ", vikt=" + getVikt() +
+                "antalVäxlar=" + antalVäxlar +
+                ", växelJustNu=" + växelJustNu +
+                '}');
+    }
+
 
     public int getAntalVäxlar() {
         return antalVäxlar;
@@ -31,7 +42,7 @@ public class Cykel extends Fordon{
 
     @Override
     public String toString() {
-        return "Cykel{" +
+        return "Bil{" +
                 "hastighet=" + getHastighet() +
                 ", vikt=" + getVikt() +
                 "antalVäxlar=" + antalVäxlar +

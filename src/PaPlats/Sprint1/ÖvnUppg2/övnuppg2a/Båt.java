@@ -1,6 +1,6 @@
-package PaPlats.Sprint1.ÖvnUppg2;
+package PaPlats.Sprint1.ÖvnUppg2.övnuppg2a;
 
-public class Båt extends Fordon{
+public class Båt extends Fordon {
 
     private int dödvikt;
 

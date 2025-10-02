@@ -1,4 +1,4 @@
-package PaPlats.Sprint1.ÖvnUppg2;
+package PaPlats.Sprint1.ÖvnUppg2.övnuppg2a;
 
 public class Huvudprogram {
 

@@ -1,6 +1,6 @@
-package PaPlats.Sprint1.ÖvnUppg2;
+package PaPlats.Sprint1.ÖvnUppg2.övnuppg2b;
 
-public class Tåg extends Fordon{
+public class Tåg extends Fordon {
 
     private int antalVagnar;
 
@@ -20,12 +20,12 @@ public class Tåg extends Fordon{
     }
 
     @Override
-    public String toString() {
-        return "Tåg{" +
+    public void printMe() {
+        System.out.println( "Tåg{" +
                 "hastighet=" + getHastighet() +
                 ", vikt=" + getVikt() +
                 "antalVagnar=" + antalVagnar +
-                '}';
+                '}');
     }
 
     public void kopplaVagn(boolean v){

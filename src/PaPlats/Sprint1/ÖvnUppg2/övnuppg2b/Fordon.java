@@ -1,6 +1,6 @@
-package PaPlats.Sprint1.ÖvnUppg2;
+package PaPlats.Sprint1.ÖvnUppg2.övnuppg2b;
 
-abstract public class Fordon {
+public abstract class Fordon {
 
     private int hastighet;
     private int vikt;
