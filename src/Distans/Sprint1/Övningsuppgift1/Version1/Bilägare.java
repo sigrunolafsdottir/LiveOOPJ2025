@@ -5,10 +5,9 @@ public class Bilägare extends Person{
     private String körkortstyp;
 
     public Bilägare(String namn, int alder, String körkortstyp){
-        super(namn, alder);
-       // this.namn = namn;
-       // this.alder = alder;
+        //efter Java25 och framåt är detta tillåtet! innan skulle super alltid vara först
         this.körkortstyp = körkortstyp;
+        super(namn, alder);
     }
 
     @Override
