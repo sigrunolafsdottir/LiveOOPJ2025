@@ -18,13 +18,22 @@ public class Bensinförbrukning {
 
     void main(){
         Scanner sc = new Scanner (System.in);
-
+/*
         IO.println("Mätarställning för ett år sen: ");
         Double mätarställningFörEttÅrSen = sc.nextDouble();
         IO.println("Mätarställning nu: ");
         Double mätarställningNu = sc.nextDouble();
         IO.println("Antal liter bensin: ");
         Double antalLiterBensin = sc.nextDouble();
+
+ */
+
+        Double mätarställningFörEttÅrSen =
+                Double.parseDouble(IO.readln("Mätarställning för ett år sen: ").trim());
+        Double mätarställningNu =
+                Double.parseDouble(IO.readln("Mätarställning nu: ").trim());
+        Double antalLiterBensin =
+                Double.parseDouble(IO.readln("Antal liter bensin: ").trim());
 
 
         double deltaMil = getAntalMilSenasteÅret(mätarställningFörEttÅrSen, mätarställningNu);
