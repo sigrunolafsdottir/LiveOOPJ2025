@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+ import static org.junit.jupiter.api.Assertions.*;
 
 class ÖvnUppg9Test {
 
@@ -22,6 +22,8 @@ class ÖvnUppg9Test {
         List<Person> personLista = övn9.readPersonLista(path);
 
         IO.println(personLista.size());
+
+        //assert Boolean.parseBoolean(("hej"));
 
         assertTrue(personLista.size() == 8);
         assertTrue(personLista.getFirst().getName().equalsIgnoreCase("Kalle Nilsson"));

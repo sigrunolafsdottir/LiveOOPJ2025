@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class ÖvnUppg9 {
 
 
-
     public boolean isTall(Person p, int limit){
         return (p.getLength() >= limit);
     }
