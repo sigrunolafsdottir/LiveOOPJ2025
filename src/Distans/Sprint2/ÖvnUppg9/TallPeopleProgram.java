@@ -30,12 +30,10 @@ public class TallPeopleProgram {
                 Person temp = new Person (arr1[0], arr1[1], arr1[2], convertString2Int(arr1[3]),  convertString2Int(arr1[4]), convertString2Int(arr1[5]));
                 allaPersoner.add(temp);
             }
-
         }
         catch(Exception e){
             e.printStackTrace();
         }
-
 
         return allaPersoner;
     }
