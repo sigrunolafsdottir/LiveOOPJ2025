@@ -11,5 +11,7 @@ public class MasterGitDemo {
 
 
         IO.println("doing some work in intellij");
+
+        IO.println("writing code, will induce conflict");
     }
 }
