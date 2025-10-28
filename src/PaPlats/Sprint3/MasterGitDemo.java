@@ -8,6 +8,8 @@ public class MasterGitDemo {
         IO.println("Created to induce merge conflict conflict conflict conflict");
 
         IO.println("Doing changes from gitHub");
+
+        IO.println("Creating push problems");
         
     }
 }
