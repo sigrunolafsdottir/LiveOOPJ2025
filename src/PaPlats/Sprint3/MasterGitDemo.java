@@ -6,5 +6,8 @@ public class MasterGitDemo {
         IO.println("another printout in master");
         IO.println("Created to induce merge conflict wrinting other stuff");
         IO.println("Created to induce merge conflict conflict conflict conflict");
+
+        IO.println("Doing changes from gitHub");
+        
     }
 }
