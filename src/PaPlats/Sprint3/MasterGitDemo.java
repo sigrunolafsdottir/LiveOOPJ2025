@@ -9,8 +9,11 @@ public class MasterGitDemo {
 
         IO.println("Doing changes from gitHub");
 
+        IO.println("Creating push problems");
 
-        IO.println("doing some work in intellij");
+
+
+        IO.println("xdoing some work in intellij");
 
         IO.println("writing code, will induce conflict");
     }
