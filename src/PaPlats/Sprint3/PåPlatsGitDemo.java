@@ -9,6 +9,8 @@ public class PåPlatsGitDemo {
         IO.println("Demoing git3");
         IO.println("Demoing git4");
 
+        IO.println("Demoing git5");
+
     }
 
 }
