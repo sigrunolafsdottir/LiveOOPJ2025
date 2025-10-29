@@ -16,7 +16,7 @@ public class GUIDemo extends JFrame  {
         add(minPanel);
         minPanel.add(button);
         minPanel.add(etikett);
-        button.addActionListener(new Button1ActionListener());
+        button.addActionListener(new Button1ActionListener(button));
         button2.addActionListener(new Button2ActionListener());
         minPanel.add(button2);
 
