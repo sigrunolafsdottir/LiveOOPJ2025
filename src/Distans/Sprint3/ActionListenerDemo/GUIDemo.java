@@ -1,10 +1,10 @@
-package Distans.Sprint3;
+package Distans.Sprint3.ActionListenerDemo;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUIDemo extends JFrame implements ActionListener {
+public class GUIDemo extends JFrame  {
 
     JPanel minPanel = new JPanel();
     JLabel etikett = new JLabel ("<html><H1>Välkomna</h1> till mitt program</html>");
@@ -16,8 +16,8 @@ public class GUIDemo extends JFrame implements ActionListener {
         add(minPanel);
         minPanel.add(button);
         minPanel.add(etikett);
-        button.addActionListener(this);
-        button2.addActionListener(this);
+        button.addActionListener(new Button1ActionListener());
+        button2.addActionListener(new Button2ActionListener());
         minPanel.add(button2);
 
         setTitle("GUIDemo");
@@ -29,21 +29,12 @@ public class GUIDemo extends JFrame implements ActionListener {
     }
 
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == button){
-            System.out.println("hej from knapp 1");
-        }
-        else{
-            System.out.println("hej from knapp 2");
-        }
 
-    }
 
     void main(){
 
     }
 
-
+   
 
 }
