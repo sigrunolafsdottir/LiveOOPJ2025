@@ -44,7 +44,7 @@ public class ContainerDemo extends JFrame implements ActionListener {
         b3.addActionListener(_ -> IO.println("hej från knapp 3"));
 
         b4.addActionListener((ActionEvent e) -> {IO.println("hej från knapp 4"+e.paramString());
-                                                IO.println("hej från knapp 4"); });
+                                                IO.println("hej från knapp 4 stuff from other person"); });
 
         textpanel.add(text);
 
