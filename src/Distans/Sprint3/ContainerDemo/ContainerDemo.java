@@ -40,7 +40,7 @@ public class ContainerDemo extends JFrame implements ActionListener {
                              });
 
 
-        b3.addActionListener(_ -> IO.println("hej från knapp 3"));
+        b3.addActionListener(_ -> IO.println("hej från knapp 3, annan ändring"));
 
         b4.addActionListener((ActionEvent e) -> {IO.println("hej från knapp 4"+e.paramString());
                                                 IO.println("hej från knapp 4"); });
