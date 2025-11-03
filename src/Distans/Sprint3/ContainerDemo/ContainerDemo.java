@@ -35,12 +35,13 @@ public class ContainerDemo extends JFrame implements ActionListener {
         b2.addActionListener(new ActionListener() {
                                  @Override
                                  public void actionPerformed(ActionEvent e) {
-                                     IO.println("hej från kanpp 2, distansdemo, konfliktändring");
+                                     IO.println("hej från kanpp 2, distansdemo + annan ändring som bör ge konflikt");
+                                     IO.println("hej från kanpp 2, distansdemo, konfliktändring!!!!");
                                  }
                              });
 
 
-        b3.addActionListener(_ -> IO.println("hej från knapp 3, annan ändring"));
+        b3.addActionListener(_ -> IO.println("hej från knapp 3"));
 
         b4.addActionListener((ActionEvent e) -> {IO.println("hej från knapp 4"+e.paramString());
                                                 IO.println("hej från knapp 4"); });
