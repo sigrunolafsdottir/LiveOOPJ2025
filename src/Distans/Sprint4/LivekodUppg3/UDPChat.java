@@ -9,6 +9,7 @@ import java.net.*;
 
 public class UDPChat extends JFrame implements ActionListener {
 
+    String name;
     JPanel panel = new JPanel();
     JTextArea chatt = new JTextArea(20, 50);
     JTextField input = new JTextField();
@@ -19,6 +20,9 @@ public class UDPChat extends JFrame implements ActionListener {
 
     public UDPChat() throws IOException {
 
+        name = JOptionPane.showInputDialog("Ditt namn ");
+
+        setTitle(name);
         panel.setLayout(new BorderLayout());
         add(panel);
         panel.add(scroll, BorderLayout.WEST);
@@ -44,7 +48,7 @@ public class UDPChat extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        String text =  input.getText();
+        String text =  name + ": " + input.getText();
         DatagramPacket packet = new DatagramPacket(text.getBytes(), text.getBytes().length, ip, port);
         try {
             System.out.println(text);
